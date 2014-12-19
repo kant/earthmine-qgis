@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/icons" >
+       <file alias="viewer">resources/eye.svg</file>
+        <file alias="features">resources/features.svg</file>
+        <file alias="location">resources/location.svg</file>
+        <file alias="settings">resources/settings.svg</file>
+        <file alias="track">resources/target.svg</file>
+        <file alias="emlogo">resources/logo.png</file>
+        <file alias="layers">resources/layers.svg</file>
+        <file alias="info">resources/info.svg</file>
+        <file alias="add">resources/plus.svg</file>
+        <file alias="measure">resources/measure.svg</file>
+        <file alias="edit">resources/edit.svg</file>
+        <file alias="marker">resources/marker.svg</file>
+        <file alias="move">resources/move.svg</file>
+        <file alias="select">resources/select.svg</file>
+        <file alias="delete">resources/delete.svg</file>
+    </qresource>
+</RCC>

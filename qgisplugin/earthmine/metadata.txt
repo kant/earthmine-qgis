@@ -1,0 +1,62 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Earthmine Viewer
+qgisMinimumVersion=2.4
+description=Earthmine Viewer for QGIS
+
+    The viewer requires a NPAPI Flash plugin (Fixfox Flash pluin) to function
+
+    You will also need service access keys from Earthmine to access the data
+version=1.0.0
+author=DMS Australia
+email=support@mapsolutions.com.au
+
+# End of mandatory metadata
+
+# Optional items:
+
+# Uncomment the following line and add your changelog:
+changelog=
+    ---1.0.0---
+    Release
+    ---0.11.24--
+    Support for multitypes
+    ---0.11.23--
+    ---0.11.22--
+    Copy Z value from viewer to new feature
+    Copy Z value from qgis to viewer if found
+    ---0.11.21--
+    Transform to layer crs for capture
+    ---0.11.20--
+    Fix measure double click
+    ---0.11.18--
+    Fix create line
+    Convert search area into map units
+    ---0.11.17--
+    Don't wipe settings if one is missing
+    ---0.11.16--
+    Increase measure line width
+    ---0.9--
+    Fix measure support
+    Fix drag support
+
+# Tags are comma separated with spaces allowed
+tags=earthmine
+
+homepage=https://github.com/DMS-Aus/earthmine-qgis
+tracker=https://github.com/DMS-Aus/earthmine-qgis
+repository=https://github.com/DMS-Aus/earthmine-qgis
+icon=icon.png
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
