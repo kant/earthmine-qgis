@@ -13,7 +13,6 @@ class SettingsDialog(FORM_BASE, FORM_CLASS):
         super(SettingsDialog, self).__init__(parent)
         self.setupUi(self)
         self.settings = QSettings()
-        self.logolabel.setPixmap(QPixmap(":/icons/emlogo"))
 
     def value(self, key, type=str):
         try:
@@ -27,6 +26,8 @@ class SettingsDialog(FORM_BASE, FORM_CLASS):
         apiKey = self.value("plugins/Earthmine/apiKey", type=str)
         secretKey = self.value("plugins/Earthmine/secretKey", type=str)
         viewerUrl = self.value("plugins/Earthmine/viewerUrl", type=str)
+        if not viewerUrl:
+            viewerUrl = 'http://qgis.mapsolutions.com.au/qgis/earthmine/view.html'
 
         self.serviceUrlLineEdit.setText(serviceUrl)
         self.baseDataURLLineEdit.setText(baseDataUrl)

@@ -6,6 +6,7 @@
         <file alias="settings">resources/settings.svg</file>
         <file alias="track">resources/target.svg</file>
         <file alias="emlogo">resources/logo.png</file>
+        <file alias="lglogo">resources/lglogo.png</file>
         <file alias="layers">resources/layers.svg</file>
         <file alias="info">resources/info.svg</file>
         <file alias="add">resources/plus.svg</file>

@@ -30,6 +30,11 @@ private var currentCaptureLine:Polyline;
 [Embed("viewermarker.svg")]
 public var markericon:Class;
 
+[Embed("earthmine/resources/lglogo.png")]
+public var lglogo:Class;
+
+public var mLogo:Bitmap = new lglogo();
+
 public function onComplete():void
 {
     Security.allowDomain("*");
@@ -45,7 +50,8 @@ public function onComplete():void
     example_viewer = new Viewer(new ViewerOptions({cursorDisabled:true}));
     viewer_container.addChild(example_viewer);
     viewer_container.addChild(line);
-
+    mLogo.x = viewer_container.width - mLogo.width - 5
+    viewer_container.addChild(mLogo);
     this.qgis("ready");
 }
 
@@ -158,6 +164,7 @@ private function onControlResize(event:ResizeEvent):void
 {
     var size:Point = new Point(viewer_container.width, viewer_container.height);
     example_viewer.setSize(size);
+    mLogo.x = viewer_container.width - mLogo.width - 20
 }
 
 private function isActionEditTool():Boolean
