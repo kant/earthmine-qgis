@@ -27,7 +27,7 @@ class SettingsDialog(FORM_BASE, FORM_CLASS):
         secretKey = self.value("plugins/Earthmine/secretKey", type=str)
         viewerUrl = self.value("plugins/Earthmine/viewerUrl", type=str)
         if not viewerUrl:
-            viewerUrl = 'http://qgis.mapsolutions.com.au/qgis/earthmine/view.html'
+            viewerUrl = 'https://www0.landgate.wa.gov.au/__data/assets/file/0003/9750/view.html'
 
         self.serviceUrlLineEdit.setText(serviceUrl)
         self.baseDataURLLineEdit.setText(baseDataUrl)
