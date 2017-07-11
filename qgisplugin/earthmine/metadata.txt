@@ -11,7 +11,7 @@ name=Earthmine Viewer
 qgisMinimumVersion=2.4
 description=Earthmine Viewer for QGIS
 
-    The viewer requires a NPAPI Flash plugin (Fixfox Flash pluin) to function
+    The viewer requires a NPAPI Flash plugin (Firefox Flash plugin) to function
 
     You will also need service access keys from Earthmine to access the data
 version=1.0.0
